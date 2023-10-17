@@ -6,4 +6,4 @@ function AddTodo(props) {
     );
 }
 
-export default TodoAddElement;
+export default AddTodo;
