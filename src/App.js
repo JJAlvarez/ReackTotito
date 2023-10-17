@@ -53,6 +53,7 @@ function App() {
       <TodoCount total={todoList.length} completed={conteoCompletadas} />
 
       <TodoInput todoText={todoText} setTodoText={setTodoText} />
+      <TodoAddElement onAddTodo={onAddTodo}  />
       <TodoList>
         {todoList.map((pendiente => {
           return (
@@ -62,8 +63,6 @@ function App() {
           );
         }))}
       </TodoList>
-
-      <TodoAddElement onAddTodo={onAddTodo}  />
     </div>
   )
 }
