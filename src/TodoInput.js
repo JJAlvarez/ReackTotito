@@ -7,7 +7,7 @@ function TodoInput(props) {
                 onChange={(event) => {
                     props.setTodoText(event.target.value);
                 }}  
-                placeholder="Ir a hacer las compras al super" 
+                placeholder="Aquí coloca tu pendiente" 
                 className="todo-input" />
         </div>
     );
