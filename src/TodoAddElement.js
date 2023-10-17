@@ -1,4 +1,4 @@
-function TodoAddElement(props) {
+function AddTodo(props) {
     return (
         <button
             onClick={props.onAddTodo}

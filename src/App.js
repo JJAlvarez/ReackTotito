@@ -1,5 +1,5 @@
 import './App.css';
-import TodoAddElement from './TodoAddElement';
+import AddTodo from './TodoAddElement';
 import TodoCount from './TodoCount';
 import TodoInput from './TodoInput';
 import TodoItem from './TodoItem';
@@ -53,6 +53,7 @@ function App() {
       <TodoCount total={todoList.length} completed={conteoCompletadas} />
 
       <TodoInput todoText={todoText} setTodoText={setTodoText} />
+      <AddTodo onAddTodo={onAddTodo}  />
       <TodoList>
         {todoList.map((pendiente => {
           return (
@@ -62,8 +63,6 @@ function App() {
           );
         }))}
       </TodoList>
-
-      <TodoAddElement onAddTodo={onAddTodo}  />
     </div>
   )
 }
